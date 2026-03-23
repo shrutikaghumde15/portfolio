@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrutika | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header">
+    <h2 class="logo">Shrutika Ghumde</h2>
+
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button id="theme-toggle"><i class="ri-moon-line"></i></button>
+</div>
+
+<!-- HERO -->
+<section id="page1" class="show">
+    <div id="intro">
+        <h1>Hello, I'm Shrutika 👋</h1>
+        <h3>Computer Science Student</h3>
+        <p>Aspiring web developer passionate about building clean and creative websites.</p>
+        <button onclick="scrollToProjects()">View Projects</button>
+    </div>
+
+    <div id="image">
+        <img src="profile.jpg.jpeg">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a second-year Computer Science student with a strong interest in web development 
+        and problem-solving. I enjoy building clean and user-friendly digital experiences.
+    </p>
+
+    <button onclick="openCV()">View Resume</button>
+</section>
+
+<!-- CV MODAL -->
+<div id="cvModal" class="modal">
+    <span class="close" onclick="closeCV()">&times;</span>
+    <div class="modal-content">
+        <iframe src="Shrutika_Resume.pdf.pdf"></iframe>
+    </div>
+</div>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card-container">
+        <div class="card">C++</div>
+        <div class="card">Python</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Coming Soon 🚀</h3>
+            <p>Exciting projects are currently in progress. Stay tuned!</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p><i class="ri-mail-line"></i> shrutikaghumde1811@gmail.com</p>
+    <p><i class="ri-phone-line"></i> 7020189483</p>
+    <p><i class="ri-map-pin-line"></i> Wardha, Maharashtra, India</p>
+
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/shrutika-ghumde-360a32330" target="_blank">
+            <i class="ri-linkedin-box-fill"></i>
+        </a> 
+        <a href="https://github.com/shrutikaghumde15">
+        <i class="ri-github-fill"></i> </a>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
